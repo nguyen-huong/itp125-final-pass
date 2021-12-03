@@ -19,7 +19,7 @@ while length <= 8:
     hashGuess = hashlib.md5(password2.encode()).hexdigest()
 #check if the guess matches print time and say this is the password
     if hashGuess in read_lines1:
-        print(time.time() - time_start)
+        print ("Found in "+ str(time.time() - time_start))
         print("This is " + password2)
         length = length + 1
 
